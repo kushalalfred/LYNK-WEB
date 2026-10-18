@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
   const data = [
     {
       title : "LYNK Slim ID Wallet",
-      description : "The LYNK Slim ID Wallet combines ultra-sleek minimalism with everyday utility. It features a clear display window for effortless ID scans, an intuitive quick-card ejector for instant access, and an integrated attachment loop to easily connect lanyards or keyrings—keeping your essential cards secure and accessible",
+      description : "The LYNK Slim ID Wallet combines ultra-sleek minimalism with everyday utility. It features a clear display window for effortless ID scans, an intuitive quick-card ejector for instant access, and an integrated attachment loop to easily connect eyelet, keyrings—keeping your essential cards secure and accessible",
       img : img4
     },
     {

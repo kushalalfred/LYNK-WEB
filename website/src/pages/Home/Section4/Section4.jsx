@@ -3,7 +3,7 @@ import "../Section4/Section4.css";
 import img1 from "../../../assets/icon1.webp";
 import img2 from "../../../assets/key.webp";
 import img3 from "../../../assets/module.webp";
-import img4 from "../../../assets/carry.png";
+// import img4 from "../../../assets/carry.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -80,13 +80,13 @@ export default function Section4() {
         {
             img: img3,
             title: "Modular Slide",
-            description: "Left-edge side clips enable modular attachment, interlocking, and secure holder insertion.",
+            description: "Side clips enable modular attachment, interlocking, and secure holder insertion.",
         },
-        {
-            img: img4,
-            title: "Attachment Clip",
-            description: "Heavy-duty carabiner securely attaches holders to belts, bags, and keychains.",
-        },
+        // {
+        //     img: img4,
+        //     title: "Attachment Clip",
+        //     description: "Heavy-duty carabiner securely attaches holders to belts, bags, and keychains.",
+        // },
     ];
 
     return (

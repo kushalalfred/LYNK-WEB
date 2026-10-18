@@ -157,7 +157,7 @@ export default function Purchase() {
                   Modular ID System
                 </span>
                 <h1 className='text-3xl font-extrabold text-slate-900 mt-1'>
-                  LYNK Badge Holder
+                  LYNK Card and Key Holder
                 </h1>
                 <div className='mt-2' aria-live='polite'>
                   <p className='text-2xl font-bold text-slate-900'>

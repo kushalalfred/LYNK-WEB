@@ -8,7 +8,7 @@ export const addOnOptions = [
   {
     id: "powerbank",
     name: "Powerbank",
-    price: 20,
+    price: 99,
     description: "Add a powerbank to your setup.",
   },
   {
@@ -19,40 +19,46 @@ export const addOnOptions = [
   },
   {
     id : "coin module",
-    name: "Coin Module",
-    price: 15,
-    description: "Add a coin module to your setup.",
-  }
+    name: "Coin Back Cover",
+    price: 5,
+    description: "Add a coin back cover to your setup.",
+  },
+  // {
+  //   id : "additional_eyelet",
+  //   name: "Additional Eyelet",
+  //   price: 5,
+  //   description: "Add an additional eyelet to your setup.",
+  // }
 ];
 
 export const configurations = [
   {
     id: "all-accessories",
     name: "Full Accessory Bundle",
-    subtitle: "Includes Key Module, Hinge Attachment & Lanyard Loop",
-    price: 49.99,
+    subtitle: "Includes Key Module, Hinge Attachment & Additional Eyelet",
+    price: 125,
     tag: "Best Value",
     description:
       "The ultimate LYNK ID Holder setup featuring all available modular attachments for maximum functionality and utility.",
     features: [
       "Key holder module",
       "Hinge attachment",
-      "Lanyard ring loop",
+      "Eyelet",
       "Quick card release slider",
-      "Tool box (contains extra screws)",
+      "Tool box (contains extra screws & screw driver)",
     ],
     image: img1,
   },
   {
     id: "key-card",
     name: "Key Module Config",
-    subtitle: "With Top Key Attachment & Lanyard Loop",
-    price: 39.99,
+    subtitle: "With Top Key Attachment & Additional Eyelet",
+    price: 117,
     description:
       "Designed for quick access to your ID while securely storing physical keys on the top module attachment.",
     features: [
       "Top key module",
-      "Lanyard ring loop",
+      "Eyelet",
       "Quick card release slider",
       "Tool box (contains extra screws)",
     ],
@@ -60,14 +66,14 @@ export const configurations = [
   },
   {
     id: "small-card",
-    name: "Hinge Module Config",
-    subtitle: "With Side Hinge & Lanyard Loop",
-    price: 34.99,
+    name: "Storage Module Config",
+    subtitle: "With Side Hinge & Additional Eyelet",
+    price: 104,
     description:
       "Features a durable side-hinge mechanism for attaching tool accessories or flexible mounting options.",
     features: [
       "Side hinge mechanism",
-      "Lanyard ring loop",
+      "Eyelet",
       "Quick card release slider",
       "Tool box (contains extra screws)",
     ],
@@ -75,9 +81,9 @@ export const configurations = [
   },
   {
     id: "minimal",
-    name: "Minimalist ID Holder",
+    name: "Minimalist Card & Key Holder",
     subtitle: "Base Holder Only",
-    price: 24.99,
+    price: 96.00,
     description:
       "Sleek, lightweight, and ultra-compact base configuration for essential ID carrying without extra attachments.",
     features: [
