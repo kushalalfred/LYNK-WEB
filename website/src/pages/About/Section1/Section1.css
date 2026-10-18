@@ -1,0 +1,9 @@
+.aboutHeader2{
+    line-height: 80px;
+}
+@media (max-width:900px) {
+    .aboutHeader2{
+        line-height: 30px;
+    }
+    
+}

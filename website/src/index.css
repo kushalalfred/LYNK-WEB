@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope";
+     
+}
+
+body.dark-mode {
+    background-color: #121D31;
+    color: #ffffff;
+}
+
+body.dark-mode #root,
+body.dark-mode main,
+body.dark-mode [class~="bg-[#F7F5F0]"] {
+    background-color: #121D31 !important;
+}
+
+body.dark-mode [class~="bg-white"],
+body.dark-mode [class~="bg-slate-50"],
+body.dark-mode [class~="bg-slate-100"],
+body.dark-mode [class~="bg-slate-200"],
+body.dark-mode [class~="bg-indigo-50/50"],
+body.dark-mode [class~="bg-indigo-50/40"],
+body.dark-mode [class~="bg-indigo-100"],
+body.dark-mode [class~="bg-gray-100"],
+body.dark-mode [class~="bg-gray-200"],
+body.dark-mode [class~="bg-gray-50"] {
+    background-color: #1b2a43 !important;
+}
+
+body.dark-mode [class~="text-black"],
+body.dark-mode [class~="text-[#3A3A3A]"],
+body.dark-mode [class~="text-[#333]"],
+body.dark-mode [class~="text-[#162032]"],
+body.dark-mode [class~="text-gray-400"],
+body.dark-mode [class~="text-gray-500"],
+body.dark-mode [class~="text-gray-600"],
+body.dark-mode [class~="text-gray-700"],
+body.dark-mode [class~="text-gray-800"],
+body.dark-mode [class~="text-gray-900"],
+body.dark-mode [class~="text-indigo-700"],
+body.dark-mode [class~="text-indigo-900"],
+body.dark-mode [class~="text-slate-400"],
+body.dark-mode [class~="text-slate-500"],
+body.dark-mode [class~="text-slate-600"],
+body.dark-mode [class~="text-slate-700"],
+body.dark-mode [class~="text-slate-800"],
+body.dark-mode [class~="text-slate-900"] {
+    color: #ffffff !important;
+}
+
+body.dark-mode [class~="border-gray-300"],
+body.dark-mode [class~="border-slate-200"],
+body.dark-mode [class~="border-slate-300"] {
+    border-color: #42516a !important;
+}
+
+body.dark-mode .contact-visual-frame {
+    background-color: #1b2a43;
+}
+
+body.dark-mode .contact-visual-card {
+    border-color: #42516a;
+    background-color: rgba(18, 29, 49, 0.9);
+}
+
+body.dark-mode .contact-form {
+    border-color: #42516a;
+}
+
+body.dark-mode .contact-field {
+    border-color: #42516a;
+    background-color: #121d31;
+    color: #ffffff;
+}
+
+body.dark-mode .contact-field::placeholder {
+    color: #aab5c7;
+}
+
+body.dark-mode .contact-send-button {
+    background-color: #d4af37;
+    color: #121d31;
+}
+
+body.dark-mode .contact-send-button:hover {
+    background-color: #e5c45a;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #d4af37;
+    border-color: #d4af37;
+    color: #121D31;
+}
+
+body.dark-mode .theme-toggle:hover {
+    background-color: #e5c45a;
+}
+
+body.dark-mode a[class~="bg-[#ff5a5f]"],
+body.dark-mode button[class~="bg-[#ff5a5f]"],
+body.dark-mode button[class~="bg-[#162032]"],
+body.dark-mode button[class~="bg-[#121D31]"] {
+    background-color: #d4af37 !important;
+    border-color: #d4af37 !important;
+    color: #121D31 !important;
+}
