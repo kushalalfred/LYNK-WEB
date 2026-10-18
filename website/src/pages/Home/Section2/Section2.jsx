@@ -1,40 +1,36 @@
 import React, { useEffect, useRef } from 'react';
 import img1 from "../../../assets/productImages/card-key-storage/card-key-storage-2.png";
-import img2 from "../../../assets/product_Images/key-card-removebg-preview.png";
-import img3 from "../../../assets/product_Images/small-card-removebg-preview.png";
-import img4 from "../../../assets/product_Images/without-removebg-preview.png";
+import img2 from "../../../assets/productImages/Card-key/card-key.png";
+import img3 from "../../../assets/productImages/card-storage/card-storage2.png";
+import img4 from "../../../assets/productImages/Card/card1.png"
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 // Keep static product data outside the component
-const data = [
-  {
-    title: "LYNK Essential ID & Key Card Holder",
-    description:
-      "The foundational LYNK card sleeve engineered with a crystal-clear front viewing window, top quick-slide access slot, and side connection rails. Provides everyday protection for RFID key cards, transit passes, and student IDs with instant side-interlock capability.",
-    img: img4,
-  },
-  {
-    title: "LYNK Modular Badge Holder with Mounting Rail & Attachment Loop",
-    description:
-      "A versatile ID card holder equipped with integrated side interlock tabs and a heavy-duty bottom attachment loop. Designed to securely display standard identification badges while offering fast, modular attachment to keychains, lanyards, or complementary LYNK accessories.",
-    img: img2,
-  },
-  {
-    title: "LYNK Minimalist Badge Holder with Swing Hinge Mount",
-    description:
-      "A streamlined, low-profile ID holder featuring a durable side-swing hinge mechanism and integrated attachment loop. Ideal for clean, snag-free carrying on belt clips, lanyards, or bags while preserving quick access to student or employee cards.",
-    img: img3,
-  },
-  {
-    title: "LYNK Pro Modular Key Card & ID Organizer Setup",
-    description:
-      "The complete, fully loaded LYNK modular system featuring top-mounting key access attachments, side interlock tabs, and a bottom keyring loop. Engineered for maximum utility, this setup allows seamless integration with additional key modules, lanyards, and carabiners, making it the ultimate everyday carry solution for students, professionals, and secure facility access.",
-    img: img1,
-  },
-];
+  const data = [
+    {
+      title : "LYNK Slim ID Wallet",
+      description : "The LYNK Slim ID Wallet combines ultra-sleek minimalism with everyday utility. It features a clear display window for effortless ID scans, an intuitive quick-card ejector for instant access, and an integrated attachment loop to easily connect lanyards or keyrings—keeping your essential cards secure and accessible",
+      img : img4
+    },
+    {
+      title: "LYNK Key Edition",
+      description: "The LYNK Key Edition unites your cards and keys into one compact design. Featuring a clear ID window, a quick-eject card lever, and an integrated top key module, it eliminates pocket clutter while keeping your most important everyday items secure and immediately accessible.",
+      img : img2
+    },
+    {
+      title: "LYNK Storage Edition",
+      description:  "The LYNK Storage Edition pairs a slim card holder with an integrated side pocket for added utility. Featuring a clear ID display, a quick-card ejector, and a secure storage compartment, it easily accommodates folded cash, coins, and small daily essentials without bulk.",
+      img : img3
+    },
+    {
+      title : 'LYNK Modular EDC (Every-Day-Carry) System',
+      description : "The LYNK Modular EDC System unifies cards, keys, and gear into one ultimate pocket setup. Combining a clear ID window, quick-eject card lever, top key module, and side storage compartment, it keeps all your daily essentials neatly organized, secure, and immediately accessible",
+      img : img1
+    },
+  ];
 
 export default function Section2() {
   const sectionRef = useRef(null);

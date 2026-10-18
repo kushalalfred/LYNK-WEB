@@ -125,7 +125,7 @@ export default function Section1() {
           </button>
         </div>
         
-        <div className='relative w-full lg:w-[580px] my-[60px] homeImgs'>
+        <div className='relative w-full  lg:w-[600px] my-[60px] homeImgs'>
           <img src={img1} alt="Error" className='w-full h-full object-cover' />
           {/* <img src={img2} alt="Error" className='w-[230px] h-full object-contain absolute  mobileImg' /> */}
         </div> 

@@ -114,9 +114,9 @@ export default function Navbar({ isDarkMode, onToggleDarkMode }) {
           Cart{itemCount > 0 ? ` (${itemCount})` : ''}
         </Link>
         <Link to="" className="text-black hover:text-gray-600 font-semibold block" onClick={closeMenu}>Home</Link>
-        <Link to="/products" className="text-black hover:text-gray-600 font-semibold block" onClick={closeMenu}>Products</Link>
+        <Link to="/purchase" className="text-black hover:text-gray-600 font-semibold block" onClick={closeMenu}>Purchase</Link>
         <Link to="/demo" className="text-black hover:text-gray-600 font-semibold block" onClick={closeMenu}>Demo</Link>
-        <Link to="/blogs" className="text-black hover:text-gray-600 font-semibold block" onClick={closeMenu}>Blogs</Link>
+        {/* <Link to="/blogs" className="text-black hover:text-gray-600 font-semibold block" onClick={closeMenu}>Blogs</Link> */}
         <Link to="/contact" className="text-black hover:text-gray-600 font-semibold block" onClick={closeMenu}>Contact</Link>
         {/* <Link to="/about" className="text-black hover:text-gray-600 font-semibold block" onClick={closeMenu}>About</Link> */}
       </div>
