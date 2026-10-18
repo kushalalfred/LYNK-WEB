@@ -6,7 +6,7 @@ import Contact from './pages/Contact/Contact';
 import Demo from './pages/Demo/Demo';
 import Purchase from './pages/Purchase/Purchase';
 import Cart from './pages/Cart/Cart';
-import Blogs from './pages/Blogs/Blogs';
+// import Blogs from './pages/Blogs/Blogs';
 import NotFound from "./pages/NotFound/NotFound";
 import { CartProvider } from "./context/CartContext";
  

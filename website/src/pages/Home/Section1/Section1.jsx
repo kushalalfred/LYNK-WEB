@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import "./Section1.css";
 // import { FaArrowRight } from "react-icons/fa";
-import img1 from "../../../assets/product_Images/without-removebg-preview.png";
-import img2 from "../../../assets/mobileSec1.png";
+import img1 from "../../../assets/productImages/Card/card1.png";
+// import img2 from "../../../assets/mobileSec1.png";
 import { gsap } from "gsap";
 import { useNavigate } from 'react-router-dom';
 
