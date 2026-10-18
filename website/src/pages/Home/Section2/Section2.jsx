@@ -109,7 +109,7 @@ export default function Section2() {
         }
       );
     });
-  }, []);
+  }, [data]);
 
   return (
     <div className='pt-[60px] px-4 w-full overflow-hidden bg-[#F7F5F0]' ref={sectionRef}>

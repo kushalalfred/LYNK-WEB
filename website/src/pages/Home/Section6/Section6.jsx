@@ -3,11 +3,11 @@ import React, { useState, useEffect, useRef } from 'react';
 
 export default function Section6() {
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(false);
+  const [isAutoPlaying] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   const containerRef = useRef(null);
-  const autoPlayRef = useRef(null);
+  // const autoPlayRef = useRef(null);
 
   // Detect mobile screen sizes
   useEffect(() => {
