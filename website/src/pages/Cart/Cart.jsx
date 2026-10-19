@@ -77,6 +77,16 @@ export default function Cart() {
                         <p className="mt-1 text-sm text-slate-500">
                           {item.subtitle}
                         </p>
+                        {item.color && (
+                          <p className="mt-2 flex items-center gap-2 text-xs text-slate-500">
+                            <span
+                              className="h-4 w-4 rounded-full border border-slate-300"
+                              style={{ backgroundColor: item.color }}
+                              aria-hidden="true"
+                            />
+                            Color: {item.colorName || item.color}
+                          </p>
+                        )}
                         {item.addOns.length > 0 && (
                           <p className="mt-2 text-xs text-slate-500">
                             Add-ons:{" "}

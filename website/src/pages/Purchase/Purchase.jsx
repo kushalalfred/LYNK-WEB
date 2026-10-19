@@ -4,10 +4,18 @@ import { useNavigate } from 'react-router-dom';
 import { addOnOptions, configurations } from "../../data/products";
 import { useCart } from "../../context/CartContext";
 
+const colorOptions = [
+  { name: "Obsidian Black", value: "#151619" },
+  { name: "Dark Titanium", value: "#50545B" },
+  { name: "Blue Titanium", value: "#2E3D55" },
+  { name: "Smoked Champagne", value: "#4B4136" },
+];
+
 export default function Purchase() {
   const navigate = useNavigate();
   const { addItem } = useCart();
   const [selectedConfig, setSelectedConfig] = useState(configurations[0]);
+  const [selectedColor, setSelectedColor] = useState(colorOptions[0].value);
   const [selectedAddOns, setSelectedAddOns] = useState({});
   const purchaseRef = useRef(null);
   const productImageRef = useRef(null);
@@ -77,11 +85,13 @@ export default function Purchase() {
       .sort();
 
     addItem({
-      id: `${selectedConfig.id}:${addOnIds.join(",")}`,
+      id: `${selectedConfig.id}:${addOnIds.join(",")}:${selectedColor}`,
       name: `LYNK Badge Holder - ${selectedConfig.name}`,
       subtitle: selectedConfig.subtitle,
       image: selectedConfig.image,
       unitPrice: totalPrice,
+      color: selectedColor,
+      colorName: colorOptions.find((color) => color.value === selectedColor).name,
       addOns: selectedAddOnDetails,
     });
     navigate("/cart");
@@ -220,6 +230,36 @@ export default function Purchase() {
                   );
                 })}
               </div>
+
+              <fieldset className='mb-6'>
+                <legend className='mb-3 text-sm font-semibold text-slate-700'>
+                  Select Color:
+                </legend>
+                <div className='flex flex-wrap gap-4'>
+                  {colorOptions.map((color) => {
+                    const isSelected = selectedColor === color.value;
+                    return (
+                      <button
+                        key={color.value}
+                        type='button'
+                        aria-pressed={isSelected}
+                        aria-label={`Select color ${color.name}`}
+                        onClick={() => setSelectedColor(color.value)}
+                        className='flex items-center gap-2 rounded-lg p-1 text-sm text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#162032] focus-visible:ring-offset-2'
+                      >
+                        <span
+                          className={`h-8 w-8 rounded-full border border-slate-300 ${
+                            isSelected ? 'ring-2 ring-[#162032] ring-offset-2' : ''
+                          }`}
+                          style={{ backgroundColor: color.value }}
+                          aria-hidden='true'
+                        />
+                        <span>{color.name}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </fieldset>
 
               {/* Optional accessories */}
               <fieldset className='space-y-3 mb-6'>
