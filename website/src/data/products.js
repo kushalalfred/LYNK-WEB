@@ -35,8 +35,8 @@ export const configurations = [
   {
     id: "all-accessories",
     name: "Full Accessory Bundle",
-    subtitle: "Includes Key Module, Hinge Attachment & Additional Eyelet",
-    price: 125,
+    subtitle: "Includes Key Module, Storage Module",
+    price: 105,
     tag: "Best Value",
     description:
       "The ultimate LYNK ID Holder setup featuring all available modular attachments for maximum functionality and utility.",
@@ -53,7 +53,7 @@ export const configurations = [
     id: "key-card",
     name: "Key Module Config",
     subtitle: "With Top Key Attachment & Additional Eyelet",
-    price: 117,
+    price: 96,
     description:
       "Designed for quick access to your ID while securely storing physical keys on the top module attachment.",
     features: [
@@ -67,8 +67,8 @@ export const configurations = [
   {
     id: "small-card",
     name: "Storage Module Config",
-    subtitle: "With Side Hinge & Additional Eyelet",
-    price: 104,
+    subtitle: "With Storage Module & Additional Eyelet",
+    price: 85,
     description:
       "Features a durable side-hinge mechanism for attaching tool accessories or flexible mounting options.",
     features: [
@@ -81,9 +81,9 @@ export const configurations = [
   },
   {
     id: "minimal",
-    name: "Minimalist Card & Key Holder",
+    name: "Minimalist Card Holder With Key Eyelet",
     subtitle: "Base Holder Only",
-    price: 96.00,
+    price: 76.00,
     description:
       "Sleek, lightweight, and ultra-compact base configuration for essential ID carrying without extra attachments.",
     features: [
